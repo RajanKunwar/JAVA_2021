@@ -1,0 +1,61 @@
+Garbage Value and Garbage Collection in Java :
+
+
+ .  In java, garbage means unreferenced objects. Garbage Collection is process of reclaiming the runtime unused memory 
+    automatically. In other words, it is a way to destroy the unused objects. 
+
+
+ .  Java applications obtain objects in memory as needed. It is the task of garbage collection (GC) in the Java virtual machine (
+    JVM) to automatically determine what memory is no longer being used by a Java application and to recycle this memory for other uses.
+
+
+ .  Garbage collection frees the programmer from manually dealing with memory deallocation.As a result, certain categories of 
+    application program bugs are eliminated.
+
+
+ =>There are two types of garbage collection activity that usually happens in Java:
+
+ . A minor or incremental garbage collection is said to have occurred when unreachable objects in the young generation heap memory 
+   are removed.
+
+
+ .A major or full garbage collection is said to have occurred when the objects that survived the minor garbage collection and 
+  copied into the old generation or permanent generation heap memory are removed. When compared to young generation, garbage collection happens less frequently in old generation.
+
+
+ => The traditional Oracle HotSpot JVM has four ways of performing the GC activity:
+
+.Serial where just one thread executed the GC
+
+.Parallel where multiple minor threads are executed simultaneously each executing a part of GC
+
+.Concurrent Mark Sweep (CMS), which is similar to parallel, also allows the execution of some application threads and reduces the frequency of stop-the-world GC
+
+.G1 which is also run in parallel and concurrently but functions differently than CMS
+
+
+=>Why is Monitoring Garbage Collection Important?
+
+.Monitoring Garbage Collection ImportantGarbage collection can impact the performance of Java application in unpredictable ways.
+ When there is frequent GC activity, it adds a lot of CPU load and slows down application processing. In turn, this leads to slow execution of business transaction and ultimate affects the user experience of end users accessing the Java application.
+
+.Excessive garbage collection activity can occur due to a memory leak in the Java application. Insufficient memory allocation to 
+ the JVM can also result in increased garbage collection activity. And when excessive garbage collection activity happens, it often manifests as increased CPU usage of the JVM!
+
+.For optimal Java application performance, it is critical to monitor a JVM’s GC activity. For good performance, full GCs should be 
+ few and far between. The time spent on GC should be low – typically less than 5% and the percentage of CPU spent for garbage collection should be very less
+
+=>Key Garbage Collection Metrics to Monitor
+
+ If garbage collection is creating Java performance problems, we need to track all aspects of the garbage collection activity in the JVM:
+
+.When garbage collection happened
+.How often garbage collection is happening
+.How much memory is being collected each time
+.How long garbage collection is running for
+.Percentage of time spent by JVM for garbage collection
+.What type of garbage collection happened – minor or full GC?
+.JVM heap and non-heap memory usage
+.CPU utilization of the JVM
+
+This allows you to identify when garbage collection is taking too long and impacting performance, which will help you to determine the optimal settings for each application based on historical patterns and trends.
