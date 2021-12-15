@@ -12,7 +12,7 @@ class Constructors{
 	}
 	public static void main(String[] args){
 		Constructors defaultConstructor = new Constructors();
-		Constructors parameterizedConstructor = new Constructors("Prajwal");
+		Constructors parameterizedConstructor = new Constructors("Xample");
 		Constructors copyConstructor = new Constructors(parameterizedConstructor);
 	}	
 }
