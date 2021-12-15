@@ -1,4 +1,8 @@
 Write a program to demonstrate all three types of constructors in java
+
+
+
+
 class Constructors{
 	String msg;
 	public Constructors(){
@@ -18,6 +22,8 @@ class Constructors{
 	}	
 }
 Write a program to implement stack using array
+
+
 import java.util.*;
 class Stacks{
 public static void main(String[] args){
@@ -83,6 +89,8 @@ public static void main(String[] args){
 }
 }
 Write a program to implement uses of Abstract Class .
+
+
 AbstractClass.java
 abstract class AbstractClass{
 	abstract void help();
@@ -100,6 +108,9 @@ class AbsDemo extends AbstractClass{
 }
 
 Write a program to achieve multiple inheritance in java.
+
+
+
 package Inheritance;
 
 interface Child1 {
@@ -133,6 +144,9 @@ class MultipleInheritance implements Child1, Child2 {
     }
 }
 Write a program to find sum and difference of two numbers using command line arguments
+
+
+
 class SumDiff{
 	public static void main(String[] args){
 	int a,b;
@@ -145,6 +159,9 @@ class SumDiff{
 	}
 }
 Write a program to demonstrate use of this, super and final
+
+
+
 class Super {
     int value = 20;
    }
@@ -175,6 +192,9 @@ final class Final{  //thid ensures that it cannot be extended to other class.
 }
 Write a program to demonstrate the use of default method in the interface.
 
+
+
+
 interface Example{
 
     default void display()
@@ -193,6 +213,9 @@ class Interface implements Example{
     }
 }
 Write a program to demonstrate the use of static methos and static variable
+
+
+
 class Static
 {
 	static int counter;
