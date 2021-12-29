@@ -5,19 +5,29 @@ All fundamental i/o operation in java is based on streams. A stream represents a
 No matter the information is comming from or going to and no matter what type of data is being read or written, the algorithm for reading and writing data is pretty much always the same.
 
 .Reading
+
 -open a stream
+
 -while more information
+
 -read information
+
 -close the stream
 
 .Writing
+
 -open a stream
+
 -while more information
+
 -write information
+
 -close the stream The java.io package contains a collection of stream classes that supports above mentioned algorithms.
 
 .Classification of Stream classes:
+
 -Byte stream : provides support for handeling i/o operations on bytes.
+
 -Character stream : provides support for managing i/o operations on characters.
 
 It is to be remembered that streams in java are one-way streets.
