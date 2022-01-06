@@ -11,9 +11,11 @@
 -The finally statement lets you execute code, after try...catch, regardless of the result
 
 .Throw
+
 -The throw statement allows you to create a custom error.
 -The throw statement is used together with an exception type. There are many exception types available in Java: ArithmeticException, FileNotFoundException, ArrayIndexOutOfBoundsException, SecurityException, etc
 
 .Throws
+
 -The throws keyword is used to declare which exceptions can be thrown from a method, while the throw keyword is used to explicitly throw an exception within a method or block of code. 
 -The throws keyword is used in a method signature and declares which exceptions can be thrown from a method.
