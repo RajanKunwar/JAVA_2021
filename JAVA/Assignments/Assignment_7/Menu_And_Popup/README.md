@@ -1,14 +1,18 @@
-#Java CardLayout
+                             #Java CardLayout
 
 .The Java CardLayout class manages the components in such a manner that only one component is visible at a time.
 
 .It treats each component as a card that is why it is known as CardLayout.
+
+
 
 *Constructors of CardLayout Class
 
 .CardLayout(): creates a card layout with zero horizontal and vertical gap.
 
 .CardLayout(int hgap, int vgap): creates a card layout with the given horizontal and vertical gap.
+
+
 
 *Commonly Used Methods of CardLayout Class
 
@@ -23,9 +27,12 @@
 .public void show(Container parent, String name): is used to flip to the specified card with the given name.
 
 
-#GridBagLayout
+
+
+                                  #GridBagLayout
 
 The Java GridBagLayout class is used to align components vertically, horizontally or along their baseline.
+
 
 *Constructor
 
